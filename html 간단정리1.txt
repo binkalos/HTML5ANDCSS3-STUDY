@@ -1,0 +1,37 @@
+태그 : 쌍으로 이뤄짐(시작태그와 닫는태그로)
+->닫는 태그가 없는 태그 : br,img ...
+
+<<텍스트 관련 태그
+-h,br,hr,p,blockquote,pre
+1. h : 제목 (1~6)
+2. br : 줄바꿈
+3. p : 줄바꿈(앞 뒤로 한줄이 띄어짐)
+4. blockquote : 인용문 -> 어디서 가져와사용했는지 출처 밝혀주기위해 cite라는 속성있음
+하지만 들여쓰기만 해줌
+5. pre : 내가 작성한 그대로 출력(프로그램 소스 보여줄때 많이 사용)
+6. hr : 수평선 태그(horizontal)  -> 옵션 width,size,color
+
++
+1. strong, b : 강조, 굵게
+2. em,i : 이텔릭체
+3. mark : 형광펜
+4. span : 인라인
+5. div :블럭
+6. del : 삭제
+7. ins : 추가 아래에 밑줄 그어줌
+8. small : 한단계 작은 글자로
+9. sup : 위첨자
+10. sub  : 아래첨자
+
+<<목록 관련 태그
+-ul,ol,dl
+1.ul : 순서없는 목록(unordered list) -> li있어야 함
+<ul type = "disc/square/circe">
+2.ol : 순서있는 목록(ordered list) -> li있어야 함
+=>1)type : 블릿조정
+    2)start : 시작 숫자 조정
+    3)reserved : 역순으로 표시 <ol type="1","A","a","l","i" start = "3"(c부터 시작)>
+3.dl : 정의하는 목록(definition list) ->사전형식
+=>1)dt(definition title) : 제목
+    2)dd(definition data) : 실제 내용
+    3) 하나의 dt에 여러개의 dd를 사용 할 수 있다.

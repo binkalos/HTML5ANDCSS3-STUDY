@@ -1,0 +1,36 @@
+<div style="background:red">
+<div id="a">
+---------------------------------
+크기
+-font-size : 20px,20pt,
+
+
+
+------------------
+배경 속성
+1)색상 : background-color
+2)그림 : background-image : url(그림파일 위치)
+3)repeat반복 여부(repeat-x : 가로반복,repeat-y세로반복) no repeat반복없음
+background-repeat:repeat;
+4)position:그림 위치(left,top으로 지정)
+background-posiotion:left top;
+5)attachment fixed(이미지 고정)/scroll
+==>body{
+	background:blue,"dog.jpg",repeat-y left top fixed;
+}
+-------------------------
+text속성
+1.text-indent들여쓰기
+2.정렬 : text-align : center/right/justify
+3.text-tranform(변형):uppercase/lowercase/capitalize
+4.text-decoration : underline/overline/none/line-through
+
+=>font italic bold 20px "휴먼옛체";
+
+5.line-height:150%(띄어쓰기 간격)
+6.coumn 다단편집
+	     -column-count: 3; /* 컬럼 갯수 */
+                -column-gap: 40px; /* 컬럼 사이의 간격 */
+                -column-rule: 2px solid pink; /* 컬럼 구분 선 */
+7.letter-spacing : 글자사이의 간격
+8.world-spzcing : 단어사이의 간격

@@ -1,0 +1,16 @@
+->테이블 만들기 : 자료를 보기 좋게 정리
+*<table>
+ <tr> : 가로줄 시작
+ <td> : 실제 데이터가 들어가는 곳
+ <th> : 굵게 표시, 제목 사용
+
+-semantic 태그 : 기능은 없는데 구조에 대해서 의미를 부여하는 태그
+ 1) caption : 표의 제목(table태그 아래에 사용)
+ 2) fiqure : figcaption하고 같이 사용
+	->표, 이미지, 동영상 같은데 제목으로 사용
+	->table위에서 사용
+ 3) thead, tbody, tfoot
+ 4) calgroup
+	->여러개의 칼럼을 그룹으로 묶음
+	->col태그와 colgroup태그는 table안에 tr전에 써야함.
+	->한 열에 같은 스타일

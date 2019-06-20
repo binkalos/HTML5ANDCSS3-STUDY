@@ -1,0 +1,89 @@
+<style>
+        #joinForm {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid white;
+            margin: 0 auto;
+        }
+        th {
+            background-color: navy;
+            color: white;
+        }
+        #buttons {
+            text-align: center;
+        }
+        #buttons input {
+            background-color: rgba(0, 0, 128, 0.733);
+            color: white;
+            border: 0;
+            padding: 10px 20px;
+            margin: 20px;
+        }
+        #buttons input:hover {
+            background-color: navy;
+            cursor: pointer;
+        }
+    </style>
+    <div id="joinForm">
+        <table cellpadding="20px">
+            <tr>
+                <th>이름</th>
+                <td><input type="text"></td>
+                <th>생년월일</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>아이디</th>
+                <td><input type="text"></td>
+                <th>비밀번호</th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td><input type="text" placeholder="id@email.com"></td>
+                <th>정보수신</th>
+                <td>
+                    <input type="checkbox" name="getinfo" value="mail"> 이메일
+                    <input type="checkbox" name="getinfo" value="sms"> SMS
+                </td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td>
+                    <select>
+                        <option>서울특별시</option>
+                        <option>경기도</option>
+                        <option>제주특별자치도</option>
+                    </select>
+                    <input type="text">
+                </td>
+                <th>성별</th>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th>연락처1</th>
+                <td><input type="text"></td>
+                <th>연락처2</th>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <th>메모</th>
+                <td colspan="3"><textarea cols="80" rows="2" placeholder="메모를 입력하세요"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="4" id="buttons">
+                    <input type="reset" value="취소">
+                    <input type="submit" value="등록">
+                </td>
+            </tr>
+        </table>
+    </div>

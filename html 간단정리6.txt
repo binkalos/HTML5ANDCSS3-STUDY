@@ -1,0 +1,96 @@
+1.label태그 (-for)
+:캡션과 폼 요소를 하나로 묶음
+1)<label>아이디: <input type="text">
+2)<label for="id">아이디</label>
+<input type="text" id="id">
+
+
+
+
+1.input type = color
+	    =number
+	    =month/week/date/datetime_local/time
+	    =range
+
+-------------------------------
+<input type="text" required>
+1)required : 무조건 입력(아이디,비번)
+2)autofocus : 자동으로 포커스 생성
+3)placeholder : 힌트(흐린 색으로)
+4)disabled : 입력 못하게
+4)autocomplete : 자동완성 기능
+----------------------------------
+----------------------------------
+--------------------------------
+<<css스타일 시트
+-Cascading Style Sheet
+-css level3
+-기능 : 텍스트,폰트,배경,박스모델,position
+-사용하는 3가지 방법
+1.<style>로 삽입
+2.링크(link rel=,/@import)
+3.인라인:태그에 직접 사용
+
+-selector(속성 값;속성값;)
+--------
+1.태그<p>
+2.클래스 : => .클래스이름
+	=>여러번 적용 가능
+3.아이디 : =>#아이디
+	=>한번만 적용가능
+	=>레이아웃 할 때 많이 사용
+
+4.자식선택자/자손선택자
+ul strong{color.darkblue;}=>자손선택자(ul태그 아래의 모든 strong에만 적용)
+dov>strong{background:yellow}=>자식선택자(div태그 바로 아래의 strong에만 적용)
+
+5. * :  .전체선택자/문서 전체에 적용
+
+-----------------------------------------------------
+가상선택자
+태그: 선택자(a:hover)
+------------
+*자식선택자(>) 자손선택자( )
+-자식선택자: 바로 아래의 자식만 선택
+-자손선택자 : 아래의 모든 애들 선택
+
+*연결선택자
+-형제선택자 : ~
+h1~p{
+text-decoration : underline;
+}=>h1형제들 중 모든 p태그 하나에 대해서 적용
+-인접형제 선택자 : +
+h1+p =h1바로옆의 p태그에만 적용
+**h1형제들 중 바로 옆의 p태그 하나에 대해서 적용
+----------------------------------------------------------
+1.label태그 (-for)
+:캡션과 폼 요소를 하나로 묶음
+1)<label>아이디: <input type="text">
+2)<label for="id">아이디</label>
+<input type="text" id="id">
+
+
+
+
+1.input type = color
+	    =number
+	    =month/week/date/datetime_local/time
+	    =range
+
+-------------------------------
+<input type="text" required>
+1)required : 무조건 입력(아이디,비번)
+2)autofocus : 자동으로 포커스 생성
+3)placeholder : 힌트(흐린 색으로)
+4)disabled : 입력 못하게
+4)autocomplete : 자동완성 기능
+----------------------------------
+
+<<css스타일 시트
+-Cascading Style Sheet
+-css level3
+-기능 : 텍스트,폰트,배경,박스모델,position
+-사용하는 3가지 방법
+1.<style>로 삽입
+2.링크(link rel=,/@import)
+3.인라인:태그에 직접 사용

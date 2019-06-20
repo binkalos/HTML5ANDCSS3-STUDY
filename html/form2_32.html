@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>웹 폼</title>
+    </head>
+    <body>
+        <h3>색 선택</h3>
+        <input type="color" value="#238e23" onchange="document.body.style.color=this.value">
+    <hr>
+
+    <h3>달, 시간 입력</h3>
+    <input type="month" value="2019-04" /><br>
+    <input type="week" value="2019-w04" /><br>
+    <input type="date" /><br>
+    <input type="datetime-local"><br>
+    <input type="time" />
+
+    <hr>
+    <input type="range" min="0" max="180" list="temp">
+    <datalist id="temp">
+        <option value="10" label="LOW">
+        <option value="50" label="MIDINM">
+        <option value="100" label="HIGH">
+    </datalist>
+
+    <hr>
+    <input type="number" min="0.0" max="10.0" step="0.5">
+    온도 설정 : 10&deg;
+    <input type="range" min="10" max="30">
+    <datalist id="temp2">
+            <option value="12" label="LOW">LOW
+            <option value="20" label="MIDINM">MIDIUM
+            <option value="128" label="HIGH">HIGH
+    </datalist>
+
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>border-radius</title>
+
+    <style>
+        div{
+            width: 150px;
+            height: 100px;
+            background-color: darksalmon;
+           display: inline-block;/*이거 주면 가로로 나옴*/
+            margin: 30px;/*박스끼리의 간격*/
+        }
+        .b1{
+            box-shadow: 20px 20px;
+        }
+        .b2{
+            box-shadow: 10px 10px
+        }
+        .b3{
+            box-shadow: -10px 10px;
+        }
+        .b4{
+            box-shadow: 10px -10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="b1">박스-0</div>
+    <div class="b2">박스-1</div>
+    <div class="b3">박스-2</div>
+    <div class="b4">박스-3</div>
+</body>
+</html>

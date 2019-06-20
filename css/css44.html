@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>positiom fixed</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <style>
+        /*position
+        1.fixed:브라우저상에 고정
+        2.left,right,top,bottom 줄 수 있음
+        3.inline인 경우block으로 변경해줘야 w,h 
+        */
+      div{
+         width: 50px; height: 50px;
+         background-color: red;
+         border: 2px solid red;
+         color: #FFF;
+         text-align: center;
+         line-height: 50px;
+      }
+      .a{
+        left: 0;
+        top: 0;
+        position: absolute;  
+      }
+      .b{
+        left: 0;
+        bottom: 0;
+        position: absolute;  
+      }
+      .c{
+          right: 0;
+          top: 0;
+          position: absolute;
+      }
+      .d{
+          right: 0;
+          bottom: 0;
+          position: absolute;
+      }
+      .e{
+          right: 50%;
+          bottom: 50%;
+          position: absolute;
+          transform: translate(-50%,-50%);
+      }
+    </style>
+</head>
+    <body>
+     <div class="a">a</div>
+     <div class="b">b</div>
+     <div class="c">c</div>
+     <div class="d">d</div>
+     <div class="e">e</div>
+    </body>
+</html>
+            

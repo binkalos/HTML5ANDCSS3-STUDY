@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>transition</title>
+        <style>
+        div{
+            width: 80px; height: 60px; 
+            background: lightcoral;
+            transition-duration: 2s, 1s;
+            border:1px solid red;
+        }  
+        #tran1:hover{
+         width: 600px;
+         transition-timing-function: linear;
+        }
+        #tran2:hover{
+        width: 600px;
+         transition-timing-function: ease;
+        
+        }
+        #tran3:hover{
+            width: 600px;
+         transition-timing-function: ease-in;
+        
+        }
+        #tran4:hover{
+            width: 600px;
+         transition-timing-function: ease-in-out;
+        
+        }
+        #tran5:hover{
+            width: 600px;
+         transition-timing-function: ease-out;
+        
+        }
+
+        </style>
+    </head>
+    <body>
+        <div id="tran1">1</div>
+        <div id="tran2">2</div>
+        <div id="tran3">3</div>
+        <div id="tran4">4</div>
+        <div id="tran5">5</div>
+    </body>
+</html>

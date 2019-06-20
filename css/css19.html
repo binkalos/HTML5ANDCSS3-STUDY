@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+ <head>     
+  
+    <style>
+        h1~ul{ /*h1아래의 모든 ul*/
+            color: greenyellow;
+            font-weight: bold;
+            background-color: orange; 
+        }
+        h1+ul{ /* h1 바로 아래의 ul*/
+            color: red;
+        }
+        a[href]{/* a태그의href속성*/
+            color: white;
+            background-color: violet;
+            font-size:15pt; 
+        }
+        a[target="_blank"]{/*a태그의 target이 blank인것*/
+            font-style: italic;
+            text-decoration: none;
+            color: aqua;
+            padding: 10pt;
+        }
+        [class ~="button"]{/*class아래 버튼이라는것이 있는 모든것들에 속성을 줌(flat button에도 속성 적용)*/
+            border: 2px solid red;
+            box-shadow: rgba(0,0,0,0,0,4);/*그림자 넣는 속성*/s
+        }
+        a[title|="us"]{/*영어2도 -이 들어가서 속성적용(-들어간 title도 속성적용가능)*/
+            color: indianred;
+        }
+        a[title|="japan"]{
+            font-size: 30pt;
+        }
+        a[title^="japan"]{
+            text-decoration: underline;
+        }
+        a[title^="china"]{
+            color: bisque;
+        }
+        a[title^="us"]{
+            text-decoration: underline;
+        }
+        a[href$="xls"]{
+            font-style:initial; 
+        }
+
+
+
+     
+    </style>
+
+
+  </head>
+
+  <body>
+    <h1>예약 방법 및 요금</h1>
+    <div>
+    <ul>
+        <li>직접 통화</li>
+        <li>음성 남기기</li>
+    </ul>
+    <br>
+    <ul>
+        <li>1인 4000</li>
+        <li>2인 5000</li>
+        <li>3인 7000</li>
+    </ul>
+    <hr>
+    <ul>
+        <li>메인메뉴</li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+    </ul>
+    <ul>
+        <li><a href="http://daum.net" target="blank">집으로</a></li>
+        <li><a href="http://daum.net" target="self">게시판</a></li>
+        <li><a href="http://daum.net" target="top">방명록</a></li>
+    </ul>
+    <hr>
+    <ul>
+        <li>메인메뉴</li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#" class="button">menu3</a></li>
+        <li><a href="#" class="flat button">menu4</a></li>
+    </ul>
+    <hr>
+    <ul>
+            <h3>외국어 서비스</h3>
+            <li><a href="#" title="us">english</a></li>
+            <li><a href="#" title="us-english">english22</a></li>
+            <li><a href="#" title="japan">japan</a></li>
+            <li><a href="#" title="china">china</a></li>
+    </ul>
+
+    <hr>
+    <ul>
+            <h3>파일서비스</h3>
+            <li><a href="a.hwp">아래한글</a></li>
+            <li><a href="aa.xls">엑셀파일</a></li>
+    </ul>
+
+    </div>
+  </body>
+
+</html>

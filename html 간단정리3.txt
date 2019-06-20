@@ -1,0 +1,29 @@
+그림
+<img src="이미지있는 경로(상대경로,절대경로)" width,height>
+1)alt : 이미지가 안뜰경우, 설명해주는 튤팁
+2)title : 마우스 가져다 놓았을 때 설명나오는 튤팁
+3)jpg,png,bmp,gif,animated 이런 형식 파일이 들어 갈 수 있음
+
+<img src = "../html5_study/img/lion1.jpg">=>..은 한단계 위를 의미 (절대경로)
+<img src = "img/lion1.jpg"> =>/는 하위 폴더를 의미(상대경로)
+
+
+하이퍼링크
+<a href="링크 넣을 파일이나 주소(상대경로, 절대경로)" title="" >
+1)<a href = "http://www.naver.com">네이버</a>
+2)<a href = "web/web2/web3.test.html">웹의 역사</a>
+3)<a href = "test2.html">네이버</a>
+4)<a href = "web/test3.html">네이버</a>
+
+이미지 링크
+<a href = "http://www.naver.com"><img src="img/이미지 이름.확장자"></a>
+
+새창 링크시 옵션 target(어느 위치에 창을 열리게 할 것인가)
+1) _blank : 완전히 새창
+ 2) _self : 현재 창에 열림
+ 3) _parent : 부모창(프레임)에 열림
+ 4) _top : 모든 프레임 취소하고 부모창에 열림
+
+앵커(anchor) : 한 문서내에서으 이동(문서량이 많을 때)
+<a id="앵커이름">
+<a href="#앵커이름">

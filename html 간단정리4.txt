@@ -1,0 +1,58 @@
+멀티미디어 삽입
+<video><audio> 5버번
+=>별도의 플러그인 설치 없이 태그만으로 실행
+
+-html5이전 : 플러그인 설치
+
+1.video
+<videl src = "비디오 있는 주소" width height controls autoplay loop>
+-controls : 막대바 나오게 하는거
+-autoplay : 문서가 실행되자마자 동영상 실행하는거
+
+<video autoplay controls>
+        <source src="img/Power.mp4" type="video/mp4">
+        <source src="img/Power.webm" type="video/webm">
+        <source src="img/Power.wmv" type="video/wmv">
+            이 브라우저는 video를 지원하지 않습니다.
+</video>
+=> 만약 지원을 안하면 한개씩 아래로 내려오며 실행시키거나 함
+
+-----------------------------------------------------------------
+
+새창 띄울 때 
+target = _blank / _self / _parent / _top
+1)_blank : 완전히 새 창
+2)_self : 자기자신 프레임에 표시
+2)_parent : 부모창(프레임)에 열림
+3)_top :  모든 프레임 취소하고 부모창에 열림
+
+-------------------------------------------------------
+
+시멘틱 태그의 출현 이유
+1.<p>,<h3> : 무슨 태그인지 의미를 모름
+   <summary> <header>  <content>
+-시멘틱태그 : 웹 문서를 구조화해서 의미있는 내용을 탐색하도록 하는 것
+<figure><tbody><thead><tfoot>
+
+------------------------------------------
+
+1.<header>
+-사이트 전체의 제목부분
+-본문의제목부분이 되며 검색등(naver,daum)
+
+2.<nav> : navigation
+-메뉴 표시, 목차 표시
+
+3.<section>
+-주제별로 컨텐츠 묶어 놓음
+-<h1>~<h6>태그 사용
+
+4.<article>
+-실제 내용이며 독립적으로 사용 할 수 있을 때
+
+5.<aside>
+-광고, 본문에서 벗어난 팁이나 노트
+-주로 왼쪽이나 오른쪽에 배치
+
+6.<footer>
+-저작권 표시나 주소 표시
